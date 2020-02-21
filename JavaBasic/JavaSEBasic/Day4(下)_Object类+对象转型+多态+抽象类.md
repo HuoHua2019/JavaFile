@@ -280,5 +280,5 @@ public class TestAbstract {
 父类 Animal 没有去实现 enjoy 方法，而是选择将其声明为 abstract 方法，同时将类本身修饰为 abstract 类，让其子类实现它的方法。
 
 ##参考资料
-Java转型(向上或向下转型)|CSDN
+Java转型(向上或向下转型) | CSDN
 <https://blog.csdn.net/shanghui815/article/details/6088588>
