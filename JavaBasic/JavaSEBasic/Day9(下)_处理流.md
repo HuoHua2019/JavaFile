@@ -167,3 +167,137 @@ public class TestDataStream {
 - Println 方法用于多种数据类型的输出。
 - PrintWriter 和 PrintStream 的输出操作不会抛出异常，用户通过检测错误状态获取错误信息。
 - PrintWriter 和 PrintStream 有自动 flush 功能。
+
+示例1
+```
+public class TestPrintStream1 {
+
+	public static void main(String[] args) {
+		PrintStream ps = null;
+		try {
+			FileOutputStream fos = new FileOutputStream("F:/github/JavaFile/JavaBasic/JavaSEBasic/源码/log/log.txt");
+			ps = new PrintStream(fos);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		if (ps != null)  System.setOut(ps);  //将命令行输出转移到PrintStream流中
+
+		for (char i = 0, width = 0; i < 65535;i++, width++ ) {
+			System.out.print(i + " ");
+			if (width == 100) {
+				System.out.println();
+				width = 0;
+			}
+		}
+	}
+}
+```
+
+示例2
+```
+import java.io.*;
+
+public class TestPrintStream2 {
+
+	public static void main(String[] args) {
+		String filename = new String(args[0]);
+
+		if (filename != null) {
+			list(filename, System.out);
+		}
+	}
+
+	public static void list(String f, PrintStream fs) {
+		try {
+			BufferedReader br = new BufferedReader(
+				new FileReader(f));  //文件的相对路径
+			String s = null;
+			while ((s = br.readLine()) != null) {
+				fs.println(s);
+			}
+            br.close();
+		} catch (IOException e) {
+			System.out.println("无法读取文件");
+		}
+	}
+}
+```
+
+示例3
+```
+import java.io.*;
+import java.util.*;
+
+public class TestPrintStream3 {
+
+	public static void main(String[] args) {
+		String s = null;
+		BufferedReader br = new BufferedReader(
+			new InputStreamReader(System.in));
+
+		try {
+			FileWriter fw = new FileWriter(
+				"F:/github/JavaFile/JavaBasic/JavaSEBasic/源码/log/log.txt");
+			PrintWriter log = new PrintWriter(fw);
+
+			while ((s = br.readLine()) != null) {
+				if (s.equalsIgnoreCase("exit"))  break;
+			System.out.println(s.toUpperCase());
+			log.println(s.toUpperCase());
+			log.println("-------");
+			log.flush();
+			}
+
+			log.println("===" + new Date() + "===");  //打印当前日期
+			log.flush();
+			log.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+
+	}
+}
+
+```
+###Object 流
+直接将 Object 写入或读出
+
+示例
+```
+import java.io.*;
+
+public class TestObjectIO {
+
+	public static void main(String[] args) {
+		T t = new T();
+		t.i = 2;  //注意这里修改了i的值
+		try {
+			FileOutputStream fos = new FileOutputStream("F:/github/JavaFile/JavaBasic/JavaSEBasic/源码/log/testobject.dat");
+			ObjectOutputStream oos = new ObjectOutputStream(fos);
+			oos.writeObject(t);
+			oos.flush();
+			oos.close();
+
+			FileInputStream fis = new FileInputStream("F:/github/JavaFile/JavaBasic/JavaSEBasic/源码/log/testobject.dat");
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			T tRead = (T)ois.readObject();
+			System.out.println(tRead.i + " " + tRead.j + " " + tRead.c + " " + tRead.d + " " + tRead.t);
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		} catch (ClassNotFoundException e2) {
+			e2.printStackTrace();
+		}
+	}
+}
+
+class T implements Serializable {  //Serializable 是用于序列化的标记性接口
+	int i = 1;
+	long j = 100000000000L;
+	char c = 'c';
+	double d = 3.1415;
+	transient int t = 5; //transient表明该变量无法被序列化
+}
+```
+*另外，externalizable接口可以自行控制序列化*
