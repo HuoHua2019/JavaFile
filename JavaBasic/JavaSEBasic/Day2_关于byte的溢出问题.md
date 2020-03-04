@@ -20,7 +20,7 @@ System.out.println(b);
 此时编译器会不会报错？
 进入cmd执行命令
 
-![](https://i.imgur.com/uCAFJcV.png)
+![3ReF8H.png](https://s2.ax1x.com/2020/03/02/3ReF8H.png)
 
 结果是-100？！
 

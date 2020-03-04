@@ -17,7 +17,7 @@
 3. 大小写敏感，长度无限制。
 4. 不能与Java语言的关键字重名。
 
-![](https://i.imgur.com/ba1qgA5.png)
+![PotPlayerMini64_TdlEoM0IT7.png](https://i.loli.net/2020/03/02/hFYm1Qy6jMHIBGL.png)
 
 ###关键字
 - 赋以特定的含义，用作专门的用途的字符串。
@@ -26,11 +26,11 @@
 - goto和const虽然从未使用，但也作为Java关键字保留。
 
 *Java部分常用关键字*
-![](https://i.imgur.com/zu82y3a.png)
+![PotPlayerMini64_Rer5kK4Uux.png](https://i.loli.net/2020/03/02/iZwaqIzLtPsHhAF.png)
 
 ##Java常量
 Java的常量用字符串表示，区分为不同的数据类型。
-![](https://i.imgur.com/ezKDQfO.png)
+![PotPlayerMini64_2l1ivHAp8m.png](https://i.loli.net/2020/03/02/SdCetxn14kXOQms.png)
 
 ***注意区分字符常量 `''` 和字符串常量 `""` ***
 ***另外，常量还可以指那些被 `final` 修饰的，不可变的变量***
@@ -39,13 +39,13 @@ Java变量是程序中最基本的存储单元，要素包括变量名，变量�
 每一个变量都属于特定的数据类型，在使用前必须对其声明，格式如下：
 `type varName [=value]`
 
-![](https://i.imgur.com/nuIdf8b.png)
+![PotPlayerMini64_GsW9SIu1as.png](https://i.loli.net/2020/03/02/dkRb6XiF5zW1UwY.png)
 
 ***注意：上图中语句 `double d1, d2, d3 = 0.123` 只对d3赋了初值0.123***
 
 **从本质上讲，变量其实就是内存中的一小块区域，使用变量名来访问这块区域**
 
-![](https://i.imgur.com/qT6DXh7.png)
+![PotPlayerMini64_15tRm5OSkb.png](https://i.loli.net/2020/03/02/2jVOFAcNyT6pM7D.png)
 
 ###Java变量的分类
 - 按被声明的的位置划分：
@@ -53,7 +53,7 @@ Java变量是程序中最基本的存储单元，要素包括变量名，变量�
   #####2. 成员变量：方法外部、类的内部定义的变量。
   *注意：类外面不能有变量的声明*
 
-![](https://i.imgur.com/LDThahn.png)
+  ![notepad___l2ihLyk2Li.png](https://i.loli.net/2020/03/02/nJvsIG75hW9mqft.png)
 
 - 按所属的数据类型划分：
   #####1. 基本数据类型变量(4类8种)
@@ -64,7 +64,7 @@ Java变量是程序中最基本的存储单元，要素包括变量名，变量�
 
   #####2. 引用数据类型变量
 
-![](https://i.imgur.com/VbhvVdT.png)
+![PotPlayerMini64_1uND5DlnSU.png](https://i.loli.net/2020/03/02/wrTeuKS7GphI1y5.png)
 
 ###基本数据类型的转换
 - boolean类型不可以转换为其他的数据类型。

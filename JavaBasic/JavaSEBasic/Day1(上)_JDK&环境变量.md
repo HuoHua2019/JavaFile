@@ -29,27 +29,27 @@
 
   然后选择自己想要的版本(一般最新版即可)，然后安装
 
-  ![](https://i.imgur.com/RUnNfik.png)
+  ![mVEi2mBtxO.png](https://i.loli.net/2020/03/02/Qnxfu8Ojg4mKdiU.png)
 
   选择JDK Download即可
 
 - ###环境变量的配置
   桌面找到"此电脑"，然后右键选择属性，在出现窗口的左上角找到"高级系统设置"
 
-  ![](https://i.imgur.com/EAXFkjG.png)
+  ![S2AXC5yVmf.png](https://i.loli.net/2020/03/02/o4d5KjHqfFsVJCY.png)
 
   在出现的窗口中找到"高级"一栏，在右下角找到"环境变量"
 
-  ![](https://i.imgur.com/yUAdBZl.png)
+  ![t6Pf0fYHCk.png](https://i.loli.net/2020/03/02/ZUIEjsyvz5S78MW.png)
 
   在下方"系统变量"中，新建变量 ` CLASSPATH ` ，变量值为 ` .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar; `
   ***注意变量值最前面有一个点 ` . ` ***
 
-  ![](https://i.imgur.com/hrWZEZd.png)
+  ![SystemPropertiesAdvanced_RvaSCnbQfb.png](https://i.loli.net/2020/03/02/MbldhaY4toJUFqs.png)
 
   接着新建变量 ` JAVA_HOME `，变量值为你安装的JDK路径，一般默认在` C:\Program Files\Java\ `文件夹下，本人安装在了E盘
 
-  ![](https://i.imgur.com/IJNFq32.png)
+  ![SystemPropertiesAdvanced_at8yg1fr7l.png](https://i.loli.net/2020/03/02/DSQzrRJLUZfnhvu.png)
 
   最后，找到名为"Path"的变量，双击。在出现的窗口中点击"新建"按钮，并输入 ` %JAVA_HOME%\bin `
   然后再新建一次，输入` %JAVA_HOME%\jre\bin `
@@ -57,11 +57,11 @@
   现在环境变量就设置好了，通过CMD进行验证
   快捷键 ` Win+R ` ， 在跳出的窗口中输入 ` cmd ` *(也即打开命令行)*
 
-  ![](https://i.imgur.com/Tbkubva.png)
+  ![explorer_8tA8UXsq3D.png](https://i.loli.net/2020/03/02/7cW6RUeKCXNGtns.png)
 
   在出现的窗口中输入 ` java ` ，若看到类似图示的一大串文字，说明环境变量设置成功
 
-  ![](https://i.imgur.com/VIDJrcc.png)
+  ![cmd_XtNQs2A3LO.png](https://i.loli.net/2020/03/02/hcGXLHYwrWCgb18.png)
 
 ##第二步 编译第一个java程序
 - ###利用文本编辑器写代码
@@ -83,12 +83,12 @@
   接下来输入文件所在的盘符，例如F盘，我输入 ` f: `
   再找到文件所在的路径，例如 ` F:\Java `
 
-  ![](https://i.imgur.com/66w0yQB.png)
+  ![cmd_aAW6fVtY3x.png](https://i.loli.net/2020/03/02/vRpcmr7Ju8MH4fF.png)
 
   继续，现在开始进行编译，输入 ` javac HelloWorld.java `
 
-  ![](https://i.imgur.com/TwsF9CW.png)
+  ![cmd_J49CR0YfbQ.png](https://i.loli.net/2020/03/02/Rnw3NurbVjeIkTZ.png)
 
   此时按下回车，会发现原文件夹下多了一个 *HelloWorld.class* 文件，这是java文件编译后生成的字节码文件，此时在命令行中输入 ` java HelloWorld `，在窗口中显示 Hello World ， 编译成功
 
-  ![](https://i.imgur.com/xdbg0kx.png)
+  ![MarkdownPad2_8ae5eOZr7w.png](https://i.loli.net/2020/03/02/y27IKgLFNsQWrlC.png)

@@ -1,4 +1,4 @@
-#Java learning_Day1(上)
+#Java learning_Day1(下)
 正式开始JavaSE的基础学习
 >本人学习视频用的是马士兵的，也在这里献上
 ><链接：https://pan.baidu.com/s/1qKNGJNh0GgvlJnitTJGqgA>
@@ -33,12 +33,12 @@ SP运营商
 ##Java程序运行机制
 ####1. Java虚拟机(Java Virtual Machine)
 
-![](https://i.imgur.com/D1Rj3hw.png)
+![PotPlayerMini64_gUrx7x5UVR.png](https://i.loli.net/2020/03/02/3h5UoxksAtIJzwV.png)
 
 **此外，Java是解释型的语言**
 编译和解释的区别：编译型语言可以一次编译成为操作系统可以识别运行的的可执行文件，解释型语言需要先编译成为对应语言的文件，再将第一次编译的文件解释成为操作系统可以识别运行的可执行文件
 
-![](https://i.imgur.com/ZdQ35Lh.png)
+![PotPlayerMini64_BQNo6iVbio.png](https://i.loli.net/2020/03/02/BacpLzToECVY1Au.png)
 
 ####2. 垃圾收集机制(Grabage collection)
 不同于C/C++等语言，Java中不再使用的内存空间会被自动检查并释放

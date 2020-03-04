@@ -27,10 +27,10 @@ Java中进行函数调用中传递参数时，遵循值传递的原则：
 ##递归
 在一个方法内部，对自身进行调用。
 例如：求Fibonacci数列：1,1,2,3,5,8，…第40个数的值。数列满足地推公式：
-![](https://i.imgur.com/6FAXxCz.png)
+![3ReC5D.png](https://s2.ax1x.com/2020/03/02/3ReC5D.png)
 
 图解递归调用：
-![](https://i.imgur.com/ZQcy8Id.png)
+![3RepVK.png](https://s2.ax1x.com/2020/03/02/3RepVK.png)
 
 递归调用代码：
 ```

@@ -17,18 +17,18 @@
 - 类是用于描述同一类型的对象的一个抽象概念，类中定义了这一类对象所应具有的静态和动态属性。
 - 类可以看成一类对象的模板，对象可以看成改类的一个具体实例。
 
-![](https://i.imgur.com/G243Jmr.png)
+![3RZzb6.png](https://s2.ax1x.com/2020/03/02/3RZzb6.png)
 
 ###关联关系
 - 往往一个方法的参数是另一个类的对象
 - 关系不紧密
 
-![](https://i.imgur.com/i4NS4JJ.png)
+![3RZO29.png](https://s2.ax1x.com/2020/03/02/3RZO29.png)
 
 ###继承关系
 - 满足XX是XX(XX is a kind of XX)
 
-![](https://i.imgur.com/q0TxmbO.png)
+![3RZXvR.png](https://s2.ax1x.com/2020/03/02/3RZXvR.png)
 
 ###聚合关系
 - 整体和部分
@@ -36,14 +36,15 @@
   - 聚集关系中的部分可以隶属于多个整体，充当不同的对象。
   - 组合关系的部分隶属于一个整体，充当单一的对象。
 
-![](https://i.imgur.com/evYYZ7j.png)
+![3RZvK1.png](https://s2.ax1x.com/2020/03/02/3RZvK1.png)
 
 ###实现关系
 - 子类对于父类的特定实现方法
 
-![](https://i.imgur.com/MLeOpqG.png)
+![3RZxDx.png](https://s2.ax1x.com/2020/03/02/3RZxDx.png)
 
 ###多态
+具体可以参考：[Java_Day4(下)](https:////www.cnblogs.com/HuoHua2020/p/12338065.html)
 
 ###创建一个简单的对象，拥有属性和方法
 ```

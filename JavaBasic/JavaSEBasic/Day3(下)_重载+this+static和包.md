@@ -170,5 +170,5 @@ import java.util.*  //引入java.util包中所有的类
 - java.io：包含能提供多种输入/输出功能的类。
 - java.util：包含一些实用工具类，如定义系统特性、使用与日期日历相关的函数。
 
-将自己的javaa文件打包的方法：
+将自己的java文件打包的方法：
 快捷键win+r，输入cmd，cd到java文件的目录下，输入 `jar -cvf xx(包的名字).jar *.*`
