@@ -1,0 +1,15 @@
+INDEX VERSION 1.131+F:\Java\JavaProject\Chat\.metadata\.plugins\org.eclipse.jdt.core
+3477052058.index
+556923830.index
+1446431520.index
+3197568034.index
+1364922169.index
+664688024.index
+3360841347.index
+643579823.index
+925099586.index
+1352230158.index
+2117328827.index
+3090721292.index
+3381671092.index
+3330922161.index
