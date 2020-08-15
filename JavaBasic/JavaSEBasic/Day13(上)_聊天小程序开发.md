@@ -1,4 +1,5 @@
 #Java learning_Day13(上)
+
 >本人学习视频用的是马士兵的，也在这里献上
 ><链接：https://pan.baidu.com/s/1qKNGJNh0GgvlJnitTJGqgA>
 提取码：fobs
@@ -6,6 +7,7 @@
 ##主要内容：第一个小小的实践项目(上)
 
 ##Chat0.1
+
 摘要：Chat0.1 作为项目的起步版本，主要功能是新建一个窗口。
 
 ```
@@ -28,6 +30,7 @@ public class ChatClient extends Frame{
 
 ##Chat0.2
 摘要：Chat0.2 在 Chat0.1 的基础上添加了文本输入框。
+
 ```
 import java.awt.*;
 
@@ -54,7 +57,9 @@ public class ChatClient extends Frame {
 将单行文本输入布局在窗口下方，将多行文本输入布局在了窗口上方。
 
 ##Chat0.3
+
 摘要：Chat0.3 现在可以通过关闭按钮正常关闭窗口。
+
 ```
 import java.awt.*;
 import java.awt.event.*;
@@ -91,6 +96,7 @@ public class ChatClient extends Frame {
 
 ##Chat0.4
 摘要：Chat0.4 现在可以获取单行文本框中的内容并输出至多行文本框中。
+
 ```
 import java.awt.*;
 import java.awt.event.*;
