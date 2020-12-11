@@ -1,7 +1,7 @@
 # Oracle learning_Day6
 
 >  本人学习视频用的是尚硅谷的，也在这里献上
->  视频链接：https://www.bilibili.com/video/BV17b411V75B?p=2
+>  视频链接：https://www.bilibili.com/video/BV17b411V75B
 >  Oracle 数据库-sql plsql - Java 学习 - 尚硅谷
 
 
@@ -24,13 +24,9 @@
 ### 2.Oracle 数据库中的表
 
 - 用户定义的表：
-
   - 用户自己创建并维护的一组表
-
   - 包含了用户所需的信息
-
     如：SELECT * FROM user_tables  查看用户创建的表
-
 - 数据字典：
   - 由 Oracle Server 自动创建的一组表
   - 包含数据库信息
@@ -79,14 +75,10 @@ FROM user_catalog;
 #### 1）CREATE TABLE 语句
 
 - 必须具备:
-
   - CREATE TABLE权限
 - 存储空间
-  
 - 必须指定:
-
   - 表名
-
   - 列名, 数据类型, **尺寸**
 
 ```plsql
@@ -284,9 +276,7 @@ DROP TABLE dept80;
 ### 7.清空表
 
 - TRUNCATE TABLE 语句：
-
   - 删除表中所有的数据
-
   - 释放表的存储空间
   - **不能回滚**
 
